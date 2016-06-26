@@ -4,9 +4,9 @@ using System.Collections;
 public class Ball : MonoBehaviour {
 
 	public float speed = 30;
-	public static int Score = 0;
 
-	Text text;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -25,7 +25,7 @@ public class Ball : MonoBehaviour {
 		// || -1 <- at the bottom of the racket
 		return (ballPos.y - racketPos.y) / racketHeight;
 	}
-	\
+
 	void OnCollisionEnter2D(Collision2D col) {
 	
 		if (col.gameObject.name == "PlayerLeft") {
